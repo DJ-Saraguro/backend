@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  postgres-db:
+    image: postgres:latest
+    container_name: edusmart-postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: espe.123
+      POSTGRES_DB: edusmart_db
+    ports:
+      - "5432:5432"
+    restart: always
